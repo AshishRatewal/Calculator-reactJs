@@ -1,5 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 const Calculator = () => {
+  const [result,setResult] = useState("hello");
+
   return (
     <>
       <div className="calculator bg-dark text-light">
@@ -8,76 +10,78 @@ const Calculator = () => {
           <div className="screen">
             <div className="row">
               <div className="col-12">
-                <h2 className="text-end">0</h2>
+                <form>
+                  <input readOnly="true" value={result} className="form-control mb-4" type="text" name="screen" id="screen" />
+                </form>
               </div>
             </div>
           </div>
           <div className="btn-section text-center">
             <div className="row">
               <div className="col-3">
-                <p className="specialBtn">AC</p>
+                <button type="button" className="specialBtn">AC</button>
               </div>
               <div className="col-3">
-                <p className="specialBtn">C</p>
+                <button type="button" className="specialBtn">C</button>
               </div>
               <div className="col-3">
-                <p className="specialBtn">%</p>
+                <button type="button" className="specialBtn">%</button>
               </div>
               <div className="col-3">
-                <p className="specialBtn">/</p>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-3">
-                <p className="btn_color">7</p>
-              </div>
-              <div className="col-3">
-                <p className="btn_color">8</p>
-              </div>
-              <div className="col-3">
-                <p className="btn_color">9</p>
-              </div>
-              <div className="col-3">
-                <p className="specialBtn">*</p>
+                <button type="button" className="specialBtn">/</button>
               </div>
             </div>
             <div className="row">
               <div className="col-3">
-                <p className="btn_color">4</p>
+                <button type="button" className="btn_color">7</button>
               </div>
               <div className="col-3">
-                <p className="btn_color">5</p>
+                <button type="button" className="btn_color">8</button>
               </div>
               <div className="col-3">
-                <p className="btn_color">6</p>
+                <button type="button" className="btn_color">9</button>
               </div>
               <div className="col-3">
-                <p className="specialBtn">-</p>
+                <button type="button" className="specialBtn">*</button>
               </div>
             </div>
             <div className="row">
               <div className="col-3">
-                <p className="btn_color">1</p>
+                <button type="button" className="btn_color">4</button>
               </div>
               <div className="col-3">
-                <p className="btn_color">2</p>
+                <button type="button" className="btn_color">5</button>
               </div>
               <div className="col-3">
-                <p className="btn_color">3</p>
+                <button type="button" className="btn_color">6</button>
               </div>
               <div className="col-3">
-                <p className="specialBtn">+</p>
+                <button type="button" className="specialBtn">-</button>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-3">
+                <button type="button" className="btn_color">1</button>
+              </div>
+              <div className="col-3">
+                <button type="button" className="btn_color">2</button>
+              </div>
+              <div className="col-3">
+                <button type="button" className="btn_color">3</button>
+              </div>
+              <div className="col-3">
+                <button type="button" className="specialBtn">+</button>
               </div>
             </div>
             <div className="row">
               <div className="col-6">
-                <p className="btn_color text-start zero">0</p>
+                <button type="button" className="btn_color text-start zero">0</button>
               </div>
               <div className="col-3">
-                <p className="btn_color">.</p>
+                <button type="button" className="btn_color">.</button>
               </div>
               <div className="col-3">
-                <p className="specialBtn">=</p>
+                <button type="button" className="specialBtn">=</button>
               </div>
             </div>
           </div>
