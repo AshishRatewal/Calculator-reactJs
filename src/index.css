@@ -13,7 +13,7 @@ body {
   border-radius: 50px;
   cursor: pointer;
   transition: 0.1s;
-  box-shadow: -11px -3px 6px rgba(0,0,0,0.4);
+  box-shadow: -11px -3px 6px rgba(0, 0, 0, 0.4);
 }
 .btn_color:hover {
   background-color: rgb(32, 32, 32);
@@ -26,13 +26,13 @@ body {
   transition: 0.1s;
   border-radius: 50px;
   cursor: pointer;
-  box-shadow: -11px -3px 6px rgba(0,0,0,0.4);
+  box-shadow: -11px -3px 6px rgba(0, 0, 0, 0.4);
   margin-bottom: 1rem;
 }
 .specialBtn:hover {
   background: rgb(218, 131, 0);
 }
-#screen{
+#screen {
   background: transparent;
   background-color: #212529;
   outline: none;
@@ -43,10 +43,16 @@ body {
   font-weight: 500;
   text-align: right;
 }
+.light-white {
+  background-color: rgb(164, 164, 164);
+}
+.light-white:hover {
+  background-color: rgb(128, 127, 127);
+}
 @media only screen and (max-width: 600px) {
-    *{
-        font-size: 1.4rem;
-    }
+  * {
+    font-size: 1.4rem;
+  }
   .btn_color,
   .specialBtn {
     border-radius: 50%;
@@ -54,9 +60,9 @@ body {
     height: 80px;
     line-height: 80px;
   }
-  .zero{
-      width: 100%;
-      border-radius: 50px;
-      padding-left: 1rem;
+  .zero {
+    width: 100%;
+    border-radius: 50px;
+    padding-left: 1rem;
   }
 }
