@@ -1,0 +1,51 @@
+* {
+  font-size: 1.5rem;
+}
+body {
+  background-color: #212529;
+}
+.screen {
+  padding-top: 3rem;
+}
+.btn_color {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.1s;
+  box-shadow: -11px -3px 6px rgba(0,0,0,0.4);
+}
+.btn_color:hover {
+  background-color: rgb(32, 32, 32);
+}
+.zero {
+  padding-left: 3rem;
+}
+.specialBtn {
+  background: rgb(254, 158, 9);
+  transition: 0.1s;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: -11px -3px 6px rgba(0,0,0,0.4);
+}
+.specialBtn:hover {
+  background: rgb(218, 131, 0);
+}
+
+@media only screen and (max-width: 600px) {
+    *{
+        font-size: 1.3rem;
+    }
+  .btn_color,
+  .specialBtn {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+  .zero{
+      width: 100%;
+      border-radius: 50px;
+      padding-left: 1rem;
+  }
+}
